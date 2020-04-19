@@ -11,7 +11,7 @@ module.exports = {
     },
     mode: process.env.node_env === "production"? "production": "development",
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'docs'),
         filename: 'index_bundle.js'
     },
     plugins: [
