@@ -2,3 +2,45 @@
     margin: 0;
     padding: 0;
 }
+
+.container {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 80%;
+    padding: 20px;
+}
+
+/* Collpasible  */
+.collapsible {
+    width: 100%;
+}
+
+.collapsible .btn {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.collapsible .fa {
+    float: right;
+}
+
+.collapsible .btn:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 16px 16px;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+/* Collpasible  */

@@ -1,10 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Collapsible from './components/Collapsible'
+import './index.css'
 
 export default class App extends React.Component {
     render() {
         return(
-            <h1>Let's start with HowToInReact</h1>
+            <div className="container">
+                <Collapsible/>
+            </div>
         )
     }
 }
