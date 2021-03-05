@@ -3,7 +3,9 @@ import { FaAngleDown, FaAngleRight } from "react-icons/fa";
 import styled from "styled-components";
 
 const CollapsibleDiv = styled.div`
+    border-bottom: 2px solid black;
     width: 100%;
+    padding-bottom: 5px;
 `;
 
 const CollapsibleDivContent = styled.div`    

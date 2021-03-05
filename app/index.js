@@ -1,17 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import styled from "styled-components";
-import Collapsible from './components/Collapsible'
-import './index.css'
+import './index.css';
+
+import Collapsible from './components/Collapsible';
+import ProgressBar from './components/ProgressBar';
 
 const Container = styled.div`
     margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    width: 80%;
-    padding: 20px;
+    width: 100%;
 `;
 
 export default class App extends React.Component {
@@ -19,6 +16,7 @@ export default class App extends React.Component {
         return(
             <Container>
                 <Collapsible/>
+                <ProgressBar/>
             </Container>
         )
     }
