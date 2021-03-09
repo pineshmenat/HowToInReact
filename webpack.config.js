@@ -2,11 +2,13 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: "./app/index.js",
+    devtool: "inline-source-map",
+    entry: "./app/index.tsx",
     module: {
         rules: [
             {test: /\.(js|jsx)$/, use: 'babel-loader'},
-            {test: /\.css$/, use: ['style-loader', 'css-loader']}
+            {test: /\.css$/, use: ['style-loader', 'css-loader']},
+            {test: /\.(ts|tsx)$/, loader: 'ts-loader'}
         ]
     },
     mode: process.env.node_env === "production"? "production": "development",
@@ -15,7 +17,7 @@ module.exports = {
         filename: 'index_bundle.js'
     },
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['.ts', 'tsx', '.js', '.jsx']
     },
     plugins: [
         new HtmlWebpackPlugin({

@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outDir": "docs",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "moduleResolution": "node",
+    "module": "commonJS",
+    "esModuleInterop": true,
+    "lib": ["es6", "dom"],
+    "target": "ES5",
+    "jsx": "react"
+  },
+  "exclude": [
+    "node_modules",
+    "docs"
+  ]
+}
